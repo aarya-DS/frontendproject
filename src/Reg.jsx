@@ -14,7 +14,7 @@ function Reg() {
 
     const submit = async () => {
         try {
-            const res = await axios.post("http://localhost:3333/reg", data);
+            const res = await axios.post("https://basicprojectfront.onrender.com", data);
             alert(res.data);
         } catch (xyz) {
             alert(xyz.response?.data || "Error occurred");
